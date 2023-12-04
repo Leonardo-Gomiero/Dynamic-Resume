@@ -49,7 +49,7 @@ export class AuthenticationService {
     });
   }
 
-  getUserInfo(): { firstName: string; lastName: string; email: string; exp1: string; empresa1: string; period1: string; exp2: string; empresa2: string; period2: string; exp3: string; empresa3: string; period3: string } | null {
+  getUserInfo(): { firstName: string; lastName: string; email: string; exp1: string; empresa1: string; period1: string; exp2: string; empresa2: string; period2: string; exp3: string; empresa3: string; period3: string; acaTit1: string; acaCon1: string; acaTit2: string; acaCon2: string; lan1: string; lanLv1: string; lan2: string; lanLv2: string; hardSkl1: string; hardSkl2: string; hardSkl3: string; softSkl1: string; softSkl2: string; softSkl3: string } | null {
     const token = localStorage.getItem('access_token');
 
     if (token && !this.jwtHelper.isTokenExpired(token)) {
@@ -69,6 +69,20 @@ export class AuthenticationService {
         exp3: decodedToken.exp3,
         empresa3: decodedToken.empresa3,
         period3: decodedToken.period3,
+        acaTit1: decodedToken.acaTit1,
+        acaCon1: decodedToken.acaCon1,
+        acaTit2: decodedToken.acaTit2,
+        acaCon2: decodedToken.acaCon2,
+        lan1: decodedToken.lan1,
+        lanLv1: decodedToken.lanLv1,
+        lan2: decodedToken.lan2,
+        lanLv2: decodedToken.lanLv2,
+        hardSkl1: decodedToken.hardSkl1,
+        hardSkl2: decodedToken.hardSkl2,
+        hardSkl3: decodedToken.hardSkl3,
+        softSkl1: decodedToken.softSkl1,
+        softSkl2: decodedToken.softSkl2,
+        softSkl3: decodedToken.softSkl3,
       };
     }
 

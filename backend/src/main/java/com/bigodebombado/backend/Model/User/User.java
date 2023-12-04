@@ -47,7 +47,35 @@ public class User implements UserDetails {
 
     private String period3;
 
-    public User(String firstName, String lastName, String email, String password, String exp1, String empresa1, String period1, String exp2, String empresa2, String period2, String exp3, String empresa3, String period3) {
+    private String acaTit1;
+
+    private String acaCon1;
+
+    private String acaTit2;
+
+    private String acaCon2;
+
+    private String lan1;
+
+    private String lanLv1;
+
+    private String lan2;
+
+    private String lanLv2;
+
+    private String hardSkl1;
+
+    private String hardSkl2;
+
+    private String hardSkl3;
+
+    private String softSkl1;;
+
+    private String softSkl2;;
+
+    private String softSkl3;
+
+    public User(String firstName, String lastName, String email, String password, String exp1, String empresa1, String period1, String exp2, String empresa2, String period2, String exp3, String empresa3, String period3, String acaTit1, String acaCon1, String acaTit2, String acaCon2, String  lan1, String lanLv1, String lan2, String lanLv2, String hardSkl1, String hardSkl2, String hardSkl3, String softSkl1, String softSkl2, String softSkl3) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -62,6 +90,20 @@ public class User implements UserDetails {
         this.exp3 = exp3;
         this.empresa3 = empresa3;
         this.period3 = period3;
+        this.acaTit1 = acaTit1;
+        this.acaCon1 = acaCon1;
+        this.acaTit2 = acaTit2;
+        this.acaCon2 = acaCon2;
+        this.lan1 = lan1;
+        this.lanLv1 = lanLv1;
+        this.lan2 = lan2;
+        this.lanLv2 = lanLv2;
+        this.hardSkl1 = hardSkl1;
+        this.hardSkl2 = hardSkl2;
+        this.hardSkl3 = hardSkl3;
+        this.softSkl1 = softSkl1;;
+        this.softSkl2 = softSkl2;;
+        this.softSkl3 = softSkl3;
     }
 
 
@@ -173,6 +215,118 @@ public class User implements UserDetails {
         this.period3 = period3;
     }
 
+    public String getAcaTit1() {
+        return acaTit1;
+    }
+
+    public void setAcaTit1(String acaTit1) {
+        this.acaTit1 = acaTit1;
+    }
+
+    public String getAcaCon1() {
+        return acaCon1;
+    }
+
+    public void setAcaCon1(String acaCon1) {
+        this.acaCon1 = acaCon1;
+    }
+
+    public String getAcaTit2() {
+        return acaTit2;
+    }
+
+    public void setAcaTit2(String acaTit2) {
+        this.acaTit2 = acaTit2;
+    }
+
+    public String getAcaCon2() {
+        return acaCon2;
+    }
+
+    public void setAcaCon2(String acaCon2) {
+        this.acaCon2 = acaCon2;
+    }
+
+    public String getLan1() {
+        return lan1;
+    }
+
+    public void setLan1(String lan1) {
+        this.lan1 = lan1;
+    }
+
+    public String getLanLv1() {
+        return lanLv1;
+    }
+
+    public void setLanLv1(String lanLv1) {
+        this.lanLv1 = lanLv1;
+    }
+
+    public String getLan2() {
+        return lan2;
+    }
+
+    public void setLan2(String lan2) {
+        this.lan2 = lan2;
+    }
+
+    public String getLanLv2() {
+        return lanLv2;
+    }
+
+    public void setLanLv2(String lanLv2) {
+        this.lanLv2 = lanLv2;
+    }
+
+    public String getHardSkl1() {
+        return hardSkl1;
+    }
+
+    public void setHardSkl1(String hardSkl1) {
+        this.hardSkl1 = hardSkl1;
+    }
+
+    public String getHardSkl2() {
+        return hardSkl2;
+    }
+
+    public void setHardSkl2(String hardSkl2) {
+        this.hardSkl2 = hardSkl2;
+    }
+
+    public String getHardSkl3() {
+        return hardSkl3;
+    }
+
+    public void setHardSkl3(String hardSkl3) {
+        this.hardSkl3 = hardSkl3;
+    }
+
+    public String getSoftSkl1() {
+        return softSkl1;
+    }
+
+    public void setSoftSkl1(String softSkl1) {
+        this.softSkl1 = softSkl1;
+    }
+
+    public String getSoftSkl2() {
+        return softSkl2;
+    }
+
+    public void setSoftSkl2(String softSkl2) {
+        this.softSkl2 = softSkl2;
+    }
+
+    public String getSoftSkl3() {
+        return softSkl3;
+    }
+
+    public void setSoftSkl3(String softSkl3) {
+        this.softSkl3 = softSkl3;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         if(this.role == UserRole.ADMIN) {
@@ -222,6 +376,21 @@ public class User implements UserDetails {
                 ", exp1='" + exp1 + '\'' +
                 ", empresa1='" + empresa1 + '\'' +
                 ", period1='" + period1 + '\'' +
+                ", acaTit1='" + acaTit1 + '\'' +
+                ", acaCon1='" + acaCon1 + '\'' +
+                ", acaTit2='" + acaTit2 + '\'' +
+                ", acaCon2='" + acaCon2 + '\'' +
+                ", lan1='" + lan1 + '\'' +
+                ", lanLv1='" + lanLv1 + '\'' +
+                ", lan2='" + lan2 + '\'' +
+                ", lanLv2='" + lanLv2 + '\'' +
+                ", hardSkl1='" + hardSkl1 + '\'' +
+                ", hardSkl2='" + hardSkl2 + '\'' +
+                ", hardSkl3='" + hardSkl3 + '\'' +
+                ", softSkl1='" + softSkl1 + '\'' +
+                ", softSkl2='" + softSkl2 + '\'' +
+                ", softSkl3='" + softSkl3 + '\'' +
+
                 '}';
     }
 }

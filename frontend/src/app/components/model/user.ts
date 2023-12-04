@@ -13,4 +13,18 @@ export class User {
     exp3: string | undefined;
     empresa3: string | undefined;
     period3: string | undefined;
+    acaTit1: string | undefined;
+    acaCon1: string | undefined;
+    acaTit2: string | undefined;
+    acaCon2: string | undefined;
+    lan1: string | undefined;
+    lanLv1: string | undefined;
+    lan2: string | undefined;
+    lanLv2: string | undefined;
+    hardSkl1: string | undefined;
+    hardSkl2: string | undefined;
+    hardSkl3: string | undefined;
+    softSkl1: string | undefined;
+    softSkl2: string | undefined;
+    softSkl3: string | undefined;
 }

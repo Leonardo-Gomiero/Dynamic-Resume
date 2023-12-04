@@ -11,7 +11,7 @@
     <div class="work">
       <h3><i class="fa fa-briefcase"></i>Experience</h3>
       <ul>
-        <li><span> {{loggedUser?.exp1}}</span><br><small>{{loggedUser?.empresa1}} - </small><small>{{loggedUser?.period1}}</small></li>
+        <li><span>{{loggedUser?.exp1}}</span><br><small>{{loggedUser?.empresa1}} - </small><small>{{loggedUser?.period1}}</small></li>
         <li><span>{{loggedUser?.exp2}}</span><br><small>{{loggedUser?.empresa2}} - </small><small>{{loggedUser?.period2}}</small></li>
         <li><span>{{loggedUser?.exp3}}</span><br><small>{{loggedUser?.empresa3}} - </small><small>{{loggedUser?.period3}}</small></li>
       </ul>
@@ -20,15 +20,15 @@
     <div class="education">
       <h3><i class="fa fa-briefcase"></i>Academic Background</h3>
       <ul>
-        <li><span>{{loggedUser?.period1}}</span><br>
-          <small>Conclusion in </small>
+        <li><span>{{loggedUser?.acaTit1}}</span><br>
+          <small>Conclusion in {{loggedUser?.acaCon1}}</small>
           <div class="progress-container">
             <div class="progress-bar fifty-percent"></div>
           </div>
         </li>
         <li>
-          <span>{{loggedUser?.exp1}}</span><br>
-          <small>Conclusion in </small>
+          <span>{{loggedUser?.acaTit2}}</span><br>
+          <small>Conclusion in {{loggedUser?.acaCon2}}</small>
           <div class="progress-container">
             <div class="progress-bar completed"></div>
           </div>
@@ -39,8 +39,8 @@
     <div class="work">
       <h3><i class="fa fa-briefcase"></i>Languages</h3>
       <ul>
-        <li><span>English</span><br><small>Fiserv</small><small>Fluent</small></li>
-        <li><span>Spanish</span><br><small>Lynden</small><small>Intermediate</small></li>
+        <li><span>{{loggedUser?.lan1}}</span><br><small>{{loggedUser?.lanLv1}}</small></li>
+        <li><span>{{loggedUser?.lan2}}</span><br><small>{{loggedUser?.lanLv2}}</small></li>
       </ul>
     </div>
 
@@ -51,18 +51,18 @@
     <div class="work">
       <h3><i class="fa fa-briefcase"></i>Hard Skills</h3>
       <ul>
-        <li><span>Hard Skill 1</span></li>
-        <li><span>Hard Skill 2</span></li>
-        <li><span>Hard Skill 3</span></li>
+        <li><span>{{loggedUser?.hardSkl1}}</span></li>
+        <li><span>{{loggedUser?.hardSkl2}}</span></li>
+        <li><span>{{loggedUser?.hardSkl3}}</span></li>
       </ul>
     </div>
 
     <div class="work">
       <h3><i class="fa fa-briefcase"></i>Soft Skills</h3>
       <ul>
-        <li><span>Soft Skill 1</span></li>
-        <li><span>Soft Skill 2</span></li>
-        <li><span>Soft Skill 3</span></li>
+        <li><span>{{loggedUser?.softSkl1}}</span></li>
+        <li><span>{{loggedUser?.softSkl2}}</span></li>
+        <li><span>{{loggedUser?.softSkl3}}</span></li>
       </ul>
     </div>
 
