@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #1a237e;
+}
+
+.register {
+  background-color: #fdd835;
+  width: 80%;
+  padding: 5vh;
+  display: flex;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.createAccount {
+  font-size: 15px;
+  margin-top: 2%;
+}
+
+.createAccount a {
+  text-decoration: underline;
+  color: #0060fa;
+  cursor: pointer;
+}
+
+.login {
+  background-color: #fdd835;
+  width: 80%;
+  padding: 5vh;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ocupa toda a largura do contêiner pai */
+}
+
+h2 {
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  color: #0e1442;
+  font-size: 10vh;
+  height: auto;
+}
+
+label {
+  margin-top: 2vh;
+  color: #0e1442;
+  font-size: 3vh;
+}
+
+input,
+select,
+button {
+  margin-top: 2vh;
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 2vh;
+  width: 100%;
+}
+
+button {
+  margin-top: 2vh;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #283593;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 7vh;
+}
+
+button:hover {
+  background-color: #9fa8da;
+}
+
+#pass {
+  width: 35%;
+  padding-top: 1vh;
+  font-size: 2vh;
+  height: auto;
+}

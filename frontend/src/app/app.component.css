@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --darkest-blue: #1a237e;
+  --darker-blue: #283593;
+  --dark-blue: #303f9f;
+  --medium-blue: #3949ab;
+  --light-blue: #3f51b5;
+  --lighter-blue: #5c6bc0;
+  --lightest-blue: #9fa8da;
+  --white: #ffffff;
+  --black: #0e1442;
+  --orange: #ffb300;
+  --yellow: #fdd835;
+  --dark-pink: #ad1457;
+  --light-pink: #d81b60;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1a237e;
+}
+
+#btn {
+  padding: 1vh;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffb300;
+  color: #0e1442;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: auto;
+  font-size: 2vh;
+}
+
+#btn:hover {
+  background-color: #fdd835;
+  color: #9fa8da;
+}
+
+.menu-bar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.menu-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar li {
+  float: left;
+  font-size: 2vh;
+}
+
+.menu-bar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2vh 16px 2vh;
+  text-decoration: none;
+  height: 100%;
+}
+
+.menu-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#registerBtn {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 0 5vh;
+  text-decoration: none;
+  padding: 1vh 2vh 1vh;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}

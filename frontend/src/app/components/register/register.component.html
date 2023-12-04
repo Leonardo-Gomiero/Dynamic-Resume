@@ -1,0 +1,103 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+
+  <div class="register" *ngIf="cadastroFlag === true">
+    <form (ngSubmit)="onSubmit()">
+      <h2>Register</h2>
+
+      <label for="email">E-mail:</label>
+      <input type="email" placeholder="E-mail" id="email" required [(ngModel)]="user.email" name="email">
+
+      <label for="password">Password:</label>
+      <div class="input-group">
+        <input id="passInput" type="{{ mostrarSenha ? 'text' : 'password' }}" placeholder="Password" id="password"
+          required [(ngModel)]="user.password" name="password">
+        <button id="pass" type="button" (click)="toggleMostrarSenha()">
+          <i class="far {{ mostrarSenha ? 'fa-eye-slash' : 'fa-eye' }}"></i>
+          {{ mostrarSenha ? 'Hide' : 'Show' }} Password
+        </button>
+      </div>
+
+      <label for="nome">First Name:</label>
+      <input type="text" placeholder="First Name" id="firstName" [(ngModel)]="user.firstName" name="firstName" required>
+
+      <label for="nome">Last Name:</label>
+      <input type="text" placeholder="Last Name" id="lastName" [(ngModel)]="user.lastName" name="lastName" required>
+
+
+      <label for="empresa1">Job Experience #1:</label>
+      <input type="text" placeholder="Exp1" id="exp1" [(ngModel)]="user.exp1" name="exp1" required>
+
+      <label for="exp1">Company #1:</label>
+      <input type="text" placeholder="Empresa1" id="empresa1" [(ngModel)]="user.empresa1" name="empresa1" required>
+
+      <label for="period1">Period #1:</label>
+      <input type="text" placeholder="Period1" id="period1" [(ngModel)]="user.period1" name="period1" required>
+
+
+
+      <label for="empresa2">Job Experience #2:</label>
+      <input type="text" placeholder="Exp2" id="exp2" [(ngModel)]="user.exp2" name="exp2" required>
+
+      <label for="exp2">Company #1:</label>
+      <input type="text" placeholder="Empresa2" id="empresa2" [(ngModel)]="user.empresa2" name="empresa2" required>
+
+      <label for="period2">Period #1:</label>
+      <input type="text" placeholder="Period2" id="period2" [(ngModel)]="user.period2" name="period2" required>
+
+
+      <label for="empresa3">Job Experience #3:</label>
+      <input type="text" placeholder="Exp3" id="exp3" [(ngModel)]="user.exp3" name="exp3" required>
+
+      <label for="exp3">Company #1:</label>
+      <input type="text" placeholder="Empresa3" id="empresa3" [(ngModel)]="user.empresa3" name="empresa3" required>
+
+      <label for="period3">Period #1:</label>
+      <input type="text" placeholder="Period3" id="period3" [(ngModel)]="user.period3" name="period3" required>
+
+
+
+      <label for="dataNascimento">Date of Birth:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="genero">Gender:</label>
+      <select id="genero" name="genero" required>
+        <option value="" disabled selected>Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <p class="createAccount">Already registered? <a (click)="inverteFlag()">Log-in.</a></p>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+
+
+  <div class="login" *ngIf="cadastroFlag === false">
+    <form (ngSubmit)="login()">
+      <h2>Log-in</h2>
+
+      <label for="email">E-mail:</label>
+      <input type="email" placeholder="E-mail" id="emailLogin" required [(ngModel)]="loginUser.email" name="emailLogin">
+
+      <label for="password">Password:</label>
+      <div class="input-group">
+        <input type="{{ mostrarSenha ? 'text' : 'password' }}" type="password" placeholder="Password" id="passwordLogin"
+          required [(ngModel)]="loginUser.password" name="passwordLogin">
+        <button id="pass" type="button" (click)="toggleMostrarSenha()">
+          <i class="far {{ mostrarSenha ? 'fa-eye-slash' : 'fa-eye' }}"></i>
+          {{ mostrarSenha ? 'Hide' : 'Show' }} Password
+        </button>
+      </div>
+
+      <p class="createAccount">New user? <a (click)="inverteFlag()">Register here.</a></p>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
