@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { UserPostComponent } from './components/userPost/userPost.component';
 
 const routes: Routes = [
   {
@@ -17,17 +18,8 @@ const routes: Routes = [
     component: PostsComponent
   },
   {
-    path: 'profile',
-    component: ProfileComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'jobs',
-    component: JobsComponent
-  },
-  {
-    path: 'network',
-    component: NetworkComponent
+    path: 'posts',
+    component: UserPostComponent
   },
   {
     path: 'register',

@@ -14,7 +14,7 @@ export class UserPostComponent {
   constructor(private db: PostService, private auth: AuthenticationService, private router: Router) {}
 
   user = this.auth.getUserInfo()?.firstName + " " + this.auth.getUserInfo()?.lastName
-  post: Post = new Post(this.user);  
+  post: Post = new Post(this.user);
   submitted = false;
 
   save() {
@@ -28,12 +28,9 @@ export class UserPostComponent {
   onSubmit() {
     this.submitted = true;
 
-    if(this.auth.isAuthenticated() === false){
-      this.router.navigate(['login']);
-    } else {
-      this.save();   
+
+      this.save();
       this.reloadPage();
-    }
   }
 
   reloadPage(){

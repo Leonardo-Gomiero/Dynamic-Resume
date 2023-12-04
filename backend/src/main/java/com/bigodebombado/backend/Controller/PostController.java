@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
-@RequestMapping("/workproposts")
+@RequestMapping("/dynamic-resume")
 public class PostController {
 
     @Autowired

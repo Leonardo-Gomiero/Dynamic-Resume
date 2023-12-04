@@ -1,7 +1,23 @@
+
 <div class="postContainer">
-    <img class="profilePic" src="../../../assets/default_profile_image.png" alt="">
-    <form (ngSubmit)="onSubmit()">
-        <input class="textInput" type="text" placeholder="Escreva algo..." [(ngModel)]="post.postText" id="postText" name="postText">
-        <button type="submit" class="postButton">Enviar</button>
-    </form>
+  <form (ngSubmit)="onSubmit()">
+    <input class="textInput" type="text" placeholder="What's on your mind?" [(ngModel)]="post.postText" id="postText"
+      name="postText">
+    <button type="submit" class="postButton">Send</button>
+  </form>
 </div>
+
+<h1>Posts</h1>
+<section>
+  <div class="post">
+    <h2>Título da Postagem 1</h2>
+    <p>Data: 03 de dezembro de 2023</p>
+    <p>Conteúdo da postagem 1...</p>
+  </div>
+
+  <div class="post">
+    <h2>Título da Postagem 2</h2>
+    <p>Data: 04 de dezembro de 2023</p>
+    <p>Conteúdo da postagem 2...</p>
+  </div>
+</section>
