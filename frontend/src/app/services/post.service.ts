@@ -9,7 +9,7 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  private baseUrl = 'http://localhost:8080/workproposts/posts';
+  private baseUrl = 'http://localhost:8080/dynamic-resume/posts';
 
   getPost(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/${id}`);

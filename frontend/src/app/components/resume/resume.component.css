@@ -87,6 +87,13 @@
   top: 0;
 }
 
+h2 {
+  padding: 10vh 0 0 6vh;
+  margin-bottom: 5vh;
+  color: white;
+  font-size: 10vh;
+  height: auto;
+}
 .education ul li:last-of-type {
   padding-bottom: 3px;
   &:after {
@@ -97,7 +104,14 @@
 .func {
   width: 100%;
   padding: 30px;
-  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #1a237e;
+  display: flex;
+}
+
+.funcL {
+  width: 100%;
+  padding: 0 30px 10vh 30px;
   background-color: #1a237e;
   display: flex;
 }

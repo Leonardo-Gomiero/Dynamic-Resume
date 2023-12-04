@@ -15,7 +15,7 @@ import { UserPostComponent } from './components/userPost/userPost.component';
 const routes: Routes = [
   {
     path: '',
-    component: PostsComponent
+    component: UserPostComponent
   },
   {
     path: 'posts',
