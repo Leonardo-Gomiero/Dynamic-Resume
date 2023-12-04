@@ -3,14 +3,15 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1a237e;
+  background-color: #1AC0A8;
 }
 
 .register {
-  background-color: #fdd835;
+  background-color: white;
   width: 80%;
   padding: 5em;
   display: flex;
@@ -28,19 +29,19 @@ body {
 
 .createAccount a {
   text-decoration: underline;
-  color: #0060fa;
+  color: #1AC0A8;
   cursor: pointer;
 }
 
 .login {
-  background-color: #fdd835;
+  background-color: white;
   width: 80%;
   padding: 5vh;
   display: flex;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   justify-content: center;
-  margin: 2em;
+  margin: 7em;
 }
 
 form {
@@ -52,14 +53,14 @@ form {
 h2 {
   margin-top: 2vh;
   margin-bottom: 5vh;
-  color: #0e1442;
+  color: #2D2C3E;
   font-size: 10vh;
   height: auto;
 }
 
 label {
   margin-top: 2vh;
-  color: #0e1442;
+  color: #2D2C3E;
   font-size: 3vh;
 }
 
@@ -79,7 +80,7 @@ button {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #283593;
+  background-color: #2D2C3E;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s;

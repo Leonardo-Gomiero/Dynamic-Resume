@@ -20,17 +20,17 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: auto;
   font-family: 'Arial', sans-serif;
-  background-color: #1a237e;
+  background-color: #1AC0A8;
 }
 
 #btn {
   padding: 1vh;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #ffb300;
-  color: #0e1442;
+  background-color: #1AC0A8;
+  color: white;
   cursor: pointer;
   transition: background-color 0.3s;
   height: auto;
@@ -38,8 +38,8 @@ body {
 }
 
 #btn:hover {
-  background-color: #fdd835;
-  color: #9fa8da;
+  background-color: #9fa8da;
+  color: #333;
 }
 
 .menu-bar {
@@ -82,7 +82,6 @@ body {
 }
 
 footer {
-  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #333;
