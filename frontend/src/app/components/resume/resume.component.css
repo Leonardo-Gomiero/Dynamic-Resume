@@ -47,7 +47,7 @@
 
 .work ul li:hover span,
 .education ul li:hover span {
-  color: #fdd835;
+  color: #1AC0A8;
 }
 
 .work ul li:first-of-type::before,
@@ -70,7 +70,7 @@
   width: 7px;
   height: 7px;
   border: 3px solid #ffffff;
-  background: #ffb300;
+  background: #1AC0A8;
   border-radius: 50%;
   left: 3px;
   z-index: 1;
